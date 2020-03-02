@@ -1,0 +1,23 @@
+﻿<style>
+    .category:hover{
+    text-decoration:underline;
+    color:#5900cb;
+}
+</style>
+@{
+    <a asp-controller="Product" asp-action="Category" asp-route-id="@Model.Category.Id" style="text-decoration: inherit;color:inherit; position: inherit; ">
+        <li class="el category">
+            @Model.Category.Name
+        </li>
+        </a>
+        foreach (Subcategory subcategory in Model.Subcategories)
+        {
+        <a asp-controller="Product" asp-action="CategoryProducts" asp-route-id="@subcategory.Id" style="text-decoration: inherit;color:inherit; position: inherit; ">
+            <li class="subcategories">
+                @subcategory.Name
+            </li>
+        </a>
+        }
+
+
+        }

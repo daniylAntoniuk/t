@@ -1,0 +1,447 @@
+@media screen and (max-width:800px) {
+    .pages {
+        font-size: 2em;
+        text-align: center;
+        margin-top: -5%;
+        z-index: 100;
+        margin-bottom: 10px;
+        width: 100%;
+        position: fixed;
+        font-size: 1.5em;
+    }
+    .sl{
+        margin-left:initial;
+    }
+    .img {
+        max-height: 240px !important;
+    }
+
+    #cart-panel {
+        margin-top: 500px;
+        width: 80%;
+    }
+    /* #search-form{
+        align-self: center;
+        justify-self: center;
+        flex-direction: row;
+    } */
+}
+
+.cart-img {
+    height: 30px;
+    width: 30px;
+}
+.sl {
+    margin-left: 150px!important;
+}
+.hgth {
+    width: 400px !important;
+    position: absolute !important;
+    height: 580px !important;
+}
+
+.Error {
+    color: red;
+}
+.category:hover{
+    text-decoration:underline;
+    color:aqua;
+}
+.comment {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    margin: 10px;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+
+.comment-img {
+    
+    margin-left:5px;
+    border-radius:50%;
+    height:30px;
+    width:30px;
+}
+
+.desc {
+    z-index: 10;
+}
+
+.card-small {
+    width: 400px !important;
+    position: absolute !important;
+    height: 380px !important;
+}
+
+.card-adv {
+    margin-left: 420px !important;
+    height: 380px !important;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+#content {
+    margin-top: 75px;
+}
+
+.con {
+    margin-top: 75px;
+}
+
+.sub-content {
+    background-color: #f8f9fa;
+}
+
+#crd {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.subcategories {
+    color: rgb(12, 80, 168);
+    padding-left: 35px;
+    font-size: 15px;
+}
+
+.discount {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img {
+    height: 200px;
+    object-fit:contain;
+    max-width: 100%;
+    
+}
+img {
+    object-fit: contain;
+}
+.badge {
+    font-size: 18px !important;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    position: absolute;
+}
+
+.card {
+    height: 20%;
+}
+
+.footer {
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    height: 60px;
+    line-height: 60px;
+}
+
+#pages {
+    margin-top: -75px;
+    z-index: 100;
+    margin-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    font-size: 1.5em;
+}
+
+
+.card-img-sm {
+    height: 180px;
+    width: 240px;
+}
+
+.card-cart {
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+}
+
+.order {
+    margin-left: 15px;
+}
+
+    .order:hover {
+        color: darkcyan;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+.card-cart:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+#cart-panel {
+    width: 100%;
+    /* padding-right: 100%; */
+    margin-top: -5px;
+    display: none;
+    z-index: 10;
+    position: fixed;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+.card {
+    margin: 5px;
+}
+
+    .card:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+.bar {
+    display: flex;
+}
+.badge{
+   z-index:2;
+}
+
+    .btn-img {
+    z-index: 50;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.el {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.subcategories:hover {
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+}
+
+.muted {
+    color: #888;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.side-bar {
+    border-right: gainsboro 0.05em solid;
+    height: 100%;
+    padding-left: 0px;
+    font-size: 1.25em;
+    list-style: none;
+    background-color: #ffffff;
+    width: 265px;
+}
+
+#advert {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white !important;
+    z-index: -9;
+}
+
+.sub-advert {
+    background-color: white !important;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.product-device {
+    position: fixed;
+    z-index: -10;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.dropdownbtn {
+    background-color: #f1f1f1 !important;
+    border: 0px !important;
+    color: black !important;
+}
+
+
+
+
+
+
+
+
+/*animashka-kakashka*/
+
+
+
+
+
+.box7:after, .box7:before {
+    content: ""
+}
+
+.box7 {
+    overflow: hidden
+}
+
+.box7 {
+    text-align: center
+}
+
+.box7 {
+    position: relative
+}
+
+    .box7:after, .box7:before {
+        width: 100%;
+        height: 100%;
+        background: rgba(11,33,47,.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all .5s ease 0s
+    }
+
+    .box7:after {
+        background: rgba(255,255,255,.3);
+        border: 2px solid rgb(12, 80, 168);
+        top: 0;
+        left: 170%;
+        opacity: 1;
+        z-index: 1;
+        transform: skewX(45deg);
+        transition: all 1s ease 0s
+    }
+
+    .box7:hover:before {
+        opacity: 1
+    }
+
+    .box7:hover:after {
+        left: -170%
+    }
+
+  
+
+    .box7 .box-content {
+        width: 100%;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        transition: all .5s ease 0s
+    }
+
+    .box7:hover .box-content {
+        bottom: 30%
+    }
+
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #ffffff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: black;
+        }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}

@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+@model GeekStore.Data.ViewModels.LoginViewModel
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img class="img-anim" src="~/img/logo.png" alt="" />
+                <h3>Welcome</h3>
+                <p>You are 30 seconds away from buying with the lowest prices!</p>
+                <a asp-controller="Account" asp-action="Register" style="text-decoration: inherit;color:inherit; position: inherit;">
+                    <input type="button" value="Register" /><br />
+                </a>
+                @{
+                                if(Model.EnternalLogins.Count==0)
+                                {
+                    <div>No enternal logins configured</div>
+                                }
+                                else
+                                {
+                    <form method="post" asp-controller="Account" asp-action="EnternalLogin" asp-route-returnUrl="@Model.ReturnUrl">
+                        <div>
+                            @foreach(var provider in Model.EnternalLogins)
+        {
+                            if(@provider.Name=="Google")
+                            {
+                            <button class="btn-log" type="submit" name="provider" value="@provider.Name" style="width:90%;"><img class="mr-2" src="~/img/google_logo.png" style="height:40px; width:40px;" />Sign In with @provider.DisplayName</button>
+                            }
+                            if(@provider.Name=="Facebook")
+                            {
+                            <button class="btn-log" type="submit" name="provider" value="@provider.Name" style="width:90%;"><img class="mr-2" src="~/img/facebook_logo.png" style="height:40px; width:40px;" />Sign In with @provider.DisplayName</button>
+                            }
+                            if(@provider.Name=="Twitter")
+                        {
+                        <button class="btn-log" type="submit" name="provider" value="@provider.Name" style="width:90%;"><img class="mr-2" src="~/img/twitter_logo.png" style="height:40px; width:40px;" />Sign In with @provider.DisplayName</button>
+                        }
+        }
+                        </div>
+                    </form>
+                                }
+                }
+            </div>
+            <div class="col-md-9 register-right">
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Sign in</h3>
+
+
+                        <div class=" register-form ml-5">
+<form method="post" asp-controller="Account" asp-action="Login">
+
+                            <div class="form-group">
+                                <input type="email" style="width:50%" asp-for="Email" class="form-control" placeholder="Your Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" style="width:50%" class="form-control" asp-for="Password" placeholder="Password *" value="" />
+                            </div>
+                            <input type="submit" class="btnRegister" value="Login" />
+                            <div class="validation" asp-validation-summary="ModelOnly"></div>
+
+
+
+</form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+

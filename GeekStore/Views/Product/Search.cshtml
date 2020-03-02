@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Search";
+}
+
+    <div class="container con">
+        <div class="row">
+            @{
+                foreach (var pr in Model)
+                {
+
+                    <div class="card col-lg-2 col-sm-4">
+                        <a asp-controller="Product" asp-action="SeeProduct" asp-route-id="@pr.Id" style="text-decoration: inherit;color:inherit; position: inherit; ">
+                            @if (pr.Discount != 0)
+                            {
+                                <span class="badge badge-secondary badge-danger">@pr.Discount %</span>
+                            }
+                            <img src="/img/@pr.Image" class="card-img-top img" />
+                            <div class="card-body">
+                                <h5 class="card-title">@pr.Name</h5>
+                                @{
+                                    if (pr.Discount != 0)
+                                    {
+                                        <p class="card-text discount">@(pr.Price - (pr.Price / 100 * pr.Discount))</p>
+                                        <p class="muted">@pr.Price</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="card-text ">@pr.Price</p>
+                                    }
+                                }
+                            </div>
+                        </a>
+
+                    </div>
+
+                }
+            }
+        </div>
+    </div>

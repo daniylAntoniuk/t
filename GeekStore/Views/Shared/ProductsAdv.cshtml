@@ -1,0 +1,15 @@
+﻿@{ 
+    <div class="card col-lg-3 col-sm-4">
+        <span class="badge badge-secondary badge-danger">25%</span>
+        <img src="/img/@Model.Image" class="card-img-top" />
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+     @if (Model.Discount != 0)
+     {
+            <p class="card-text discount">@(Model.Price - (Model.Price / 100 * Model.Discount))</p>
+            <p class="muted">@Model.Price</p>
+     }
+            </div>
+    </div>
+
+}
